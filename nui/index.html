@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>LibertyCode Car HUD</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="cinema">
+            <div class="cinema-top"></div>
+            <div class="cinema-bottom"></div>
+        </div>
+        <div class="watermark">
+            <div id="playerId">2</div>
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+        </div>
+
+        <div class="speedometer">
+            <span id="speed"></span>
+            <div class="progress" id="rpm"><div class="progressValue"></div></div>
+            <div class="cards">
+                <div class="card card-left">
+                    <div class="card-icon">
+                        <i class="fa-regular fa-compass"></i>
+                    </div>
+                    <div class="card-content">
+                        <span id="heading"></span>
+                        <span id="street"></span>
+                    </div>
+                </div>
+                <div class="card card-right">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-gas-pump"></i>
+                    </div>
+                    <div class="card-content">
+                        <span id="fuelLevel"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
